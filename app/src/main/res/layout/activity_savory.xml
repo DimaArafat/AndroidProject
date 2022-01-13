@@ -96,7 +96,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/linden_hill"
-        android:text="Savory Puff Pastry"
+        android:text="Sundried Tomatoes Focaccia"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
@@ -132,7 +132,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="56dp"
         android:fontFamily="@font/linden_hill"
-        android:text="Sundried Tomato Focaccia"
+        android:text="Savory Puff Pastry"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView1"
         app:layout_constraintTop_toBottomOf="@+id/cnt21" />

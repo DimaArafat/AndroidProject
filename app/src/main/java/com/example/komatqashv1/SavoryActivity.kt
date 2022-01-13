@@ -24,7 +24,6 @@ class SavoryActivity : AppCompatActivity() {
         val sub21: Button = findViewById(R.id.sub21)
         val cnt21: TextView = findViewById(R.id.cnt21)
         add21.setOnClickListener{
-            Toast.makeText(baseContext, "hello", Toast.LENGTH_LONG).show()
 
             val values = ContentValues()
             values.put(CartContentProvider.ITEM, (findViewById<View>(R.id.itemName21) as TextView).text.toString())
@@ -32,7 +31,6 @@ class SavoryActivity : AppCompatActivity() {
             val uri = contentResolver.insert(
                 CartContentProvider.CONTENT_URI, values
             )
-            Toast.makeText(baseContext, uri.toString(), Toast.LENGTH_LONG).show()
             var value: Int = cnt21.text.toString().toInt();
             value += 1;
             cnt21.text = value.toString()

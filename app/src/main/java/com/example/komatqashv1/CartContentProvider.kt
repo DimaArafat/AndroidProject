@@ -108,7 +108,7 @@ class CartContentProvider : ContentProvider() {
     ): Cursor? {
         val c = db?.rawQuery("select sum(price) from cart", null);
         if(c?.moveToFirst() == true)
-            TOTAL = c.getDouble(0).toString();
+            TOTAL = String.format("%.3f", c.getDouble(0))
         else
             TOTAL = (0.0).toString();
 
