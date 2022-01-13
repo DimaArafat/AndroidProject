@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SweetActivity">
+
+    <EditText
+        android:id="@+id/cnt12"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/add12"
+        app:layout_constraintStart_toEndOf="@+id/sub12"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/cnt13"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/add13"
+        app:layout_constraintStart_toEndOf="@+id/sub13"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/cnt14"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/add14"
+        app:layout_constraintStart_toEndOf="@+id/sub14"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <android.widget.Button
+        android:id="@+id/sub11"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/ic_baseline_remove"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#E4B0E4" />
+
+    <android.widget.Button
+        android:id="@+id/sub12"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/ic_baseline_remove"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:strokeColor="#E4B0E4" />
+
+    <android.widget.Button
+        android:id="@+id/sub14"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="604dp"
+        android:background="@drawable/ic_baseline_remove"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#E4B0E4" />
+
+    <android.widget.Button
+        android:id="@+id/add11"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/ic_baseline_add"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        android:onClick="onClickAddItem"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#E4B0E4" />
+
+    <android.widget.Button
+        android:id="@+id/add14"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="604dp"
+        android:background="@drawable/ic_baseline_add"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#E4B0E4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="186dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="556dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/croissantpic" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Price = 1.6 JOD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Chocolate Croissant"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/add13"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/ic_baseline_add"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/cnt13"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:strokeColor="#E4B0E4" />
+
+    <android.widget.Button
+        android:id="@+id/add12"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="43dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/ic_baseline_add"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/cnt12"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:strokeColor="#E4B0E4" />
+
+    <android.widget.Button
+        android:id="@+id/sub13"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="42dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/ic_baseline_remove"
+        android:fontFamily="@font/linden_hill"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#E4B0E4" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="186dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lotusdanish" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="208dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Price = 1.4 JOD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Lotus Danish"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="186dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cinnamonpic" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="396dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Price = 1.4 JOD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="364dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Cinnamon Roll"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="186dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.953"
+        app:srcCompat="@drawable/cruffinpic" />
+
+    <TextView
+        android:id="@+id/itemName14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="532dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Chocolate Chip Cruffin"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="130dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="564dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Price = 1.0 JOD"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Checkout"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="192dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Checkout"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="#E4B0E4" />
+
+    <EditText
+        android:id="@+id/cnt11"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/add11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/sub11"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

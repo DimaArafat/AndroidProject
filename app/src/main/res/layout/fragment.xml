@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/RatingRadioGroup"
+        android:layout_width="366dp"
+        android:layout_height="266dp"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389">
+
+        <RadioButton
+            android:id="@+id/excellentRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent" />
+
+        <RadioButton
+            android:id="@+id/vgoodRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Good" />
+
+        <RadioButton
+            android:id="@+id/goodRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good" />
+
+        <RadioButton
+            android:id="@+id/satisfactoryRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfactory" />
+
+        <RadioButton
+            android:id="@+id/poorRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poor" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBT"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Submit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/cancelBT"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        app:strokeColor="#E4B0E4" />
+
+    <Button
+        android:id="@+id/cancelBT"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="154dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/linden_hill"
+        android:text="Cancel"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        app:strokeColor="#E4B0E4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
